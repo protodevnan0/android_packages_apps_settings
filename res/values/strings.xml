@@ -3122,7 +3122,7 @@
     <string name="system_update_settings_list_item_summary">""</string>
 
     <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
-    <string name="firmware_version">Android version</string>
+    <string name="firmware_version"><b>Android version</b></string>
     <!-- About phone screen, status item label  [CHAR LIMIT=60] -->
     <string name="security_patch">Android security patch level</string>
     <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
@@ -3135,6 +3135,10 @@
     <string name="hardware_revision">Hardware version</string>
     <!-- About phone screen, fcc equipment id label  [CHAR LIMIT=40] -->
     <string name="fcc_equipment_id">Equipment ID</string>
+    <!-- About phone screen, midnight build  [CHAR LIMIT=40] -->
+    <string name="midnight_build_title"><b>Midnight Build</b></string>
+    <!-- About phone screen, midnight codename  [CHAR LIMIT=40] -->
+    <string name="midnight_codename_title"><b>Midnight Codename</b></string>
     <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
     <string name="baseband_version">Baseband version</string>
     <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->

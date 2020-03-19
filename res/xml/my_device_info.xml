@@ -114,6 +114,21 @@
         settings:keywords="@string/keywords_imei_info"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
+            
+    <!-- Midnight Build -->
+    <Preference
+        android:key="midnight_build_id"
+        android:order="34"
+        android:title="@string/midnight_build_title"
+        android:summary="@string/summary_placeholder"
+        settings:allowDividerAbove="true"/>
+        
+    <!-- Midnight Codename -->
+    <Preference
+        android:key="midnight_codename_id"
+        android:order="35"
+        android:title="@string/midnight_codename_title"
+        android:summary="@string/summary_placeholder"/>
 
     <!-- Android version -->
     <Preference
