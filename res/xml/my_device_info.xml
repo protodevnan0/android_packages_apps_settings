@@ -13,6 +13,9 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
+  
+  Credits: 
+  yash92duster - Logo partial code
   -->
 
 <PreferenceScreen
@@ -23,15 +26,44 @@
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="my_device_info_header"
+        android:layout="@layout/empty"
         android:order="0"
-        android:layout="@layout/settings_entity_header"
         android:selectable="false"
         settings:isPreferenceVisible="false"/>
+        
+        <PreferenceScreen 
+        	android:layout="@layout/midnight"
+        	android:key="midnightap"/>
+        	
+        	
+    <!-- Midnight Build -->
+    <Preference
+        android:key="midnight_build_id"
+        android:order="1"
+        android:title="@string/midnight_build_title"
+        android:summary="@string/summary_placeholder"
+        settings:allowDividerAbove="true"/>
+        
+    <!-- Midnight Codename -->
+    <Preference
+        android:key="midnight_codename_id"
+        android:order="2"
+        android:title="@string/midnight_codename_title"
+        android:summary="@string/summary_placeholder"/>
+
+    <!-- Android version -->
+    <Preference
+        android:key="firmware_version"
+        android:order="3"
+        android:title="@string/firmware_version"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
     <!-- Device name -->
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="device_name"
-        android:order="1"
+        android:order="4"
         android:title="@string/my_device_info_device_name_preference_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
@@ -40,7 +72,7 @@
     <!-- Account name -->
     <Preference
         android:key="branded_account"
-        android:order="2"
+        android:order="5"
         android:title="@string/my_device_info_account_preference_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
@@ -48,7 +80,7 @@
     <!-- Phone number -->
     <Preference
         android:key="phone_number"
-        android:order="3"
+        android:order="6"
         android:title="@string/status_number"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
@@ -114,30 +146,6 @@
         settings:keywords="@string/keywords_imei_info"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
-            
-    <!-- Midnight Build -->
-    <Preference
-        android:key="midnight_build_id"
-        android:order="34"
-        android:title="@string/midnight_build_title"
-        android:summary="@string/summary_placeholder"
-        settings:allowDividerAbove="true"/>
-        
-    <!-- Midnight Codename -->
-    <Preference
-        android:key="midnight_codename_id"
-        android:order="35"
-        android:title="@string/midnight_codename_title"
-        android:summary="@string/summary_placeholder"/>
-
-    <!-- Android version -->
-    <Preference
-        android:key="firmware_version"
-        android:order="42"
-        android:title="@string/firmware_version"
-        android:summary="@string/summary_placeholder"
-        android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
     <!--IP address -->
     <Preference

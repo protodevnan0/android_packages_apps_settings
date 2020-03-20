@@ -61,7 +61,7 @@
     <string name="gesture_double_twist_sensor_vendor" translatable="false"></string>
 
     <!-- When true enable gesture setting. -->
-    <bool name="config_gesture_settings_enabled">false</bool>
+    <bool name="config_gesture_settings_enabled">true</bool>
 
     <!-- If the Storage Manager settings are enabled. -->
     <bool name="config_storage_manager_settings_enabled">false</bool>
@@ -187,7 +187,7 @@
     <bool name="config_use_legacy_suggestion">true</bool>
 
     <!-- Whether or not homepage should display user's account avatar -->
-    <bool name="config_show_avatar_in_homepage">false</bool>
+    <bool name="config_show_avatar_in_homepage">true</bool>
 
     <!-- Whether or not emergency info tile should display in device info page -->
     <bool name="config_show_emergency_info_in_device_info">true</bool>
